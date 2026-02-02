@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Restricted Addendum — Personal Notes</title>
+
+<style>
+body{
+    margin:0;
+    background:#081c4a;
+    color:#e6f0ff;
+    font-family:"Courier New", monospace;
+}
+header{
+    padding:50px;
+    background:linear-gradient(#0b2f8a,#06163d);
+    border-bottom:6px solid #000;
+}
+h1{margin:0;font-size:36px;color:#9fd1ff;}
+p{line-height:1.8;font-size:16px;margin-bottom:18px;}
+main{
+    max-width:900px;
+    margin:auto;
+    padding:60px;
+    background:#0c2f7a;
+    min-height:1400px;
+}
+input{
+    background:#001133;
+    color:#9fd1ff;
+    border:1px solid #5577aa;
+    padding:10px;
+    font-size:16px;
+}
+button{
+    background:#113399;
+    color:#fff;
+    border:none;
+    padding:10px 20px;
+    cursor:pointer;
+}
+button:hover{background:#3355cc;}
+.hidden{
+    color:#0c2f7a;
+}
+.hidden::selection{
+    background:#ffdd88;
+    color:#000;
+}
+.redacted{
+    background:#000;
+    color:#000;
+    padding:0 6px;
+}
+.section{
+    margin-top:60px;
+}
+footer{
+    background:#001133;
+    text-align:center;
+    padding:25px;
+    font-size:13px;
+    opacity:0.7;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Supplemental Personal Records</h1>
+<p>Access-controlled notes — not intended for distribution.</p>
+</header>
+
+<main>
+
+<div id="gate">
+<p>
+These notes were separated from the main archive intentionally.
+If you reached this page by accident, you should leave.
+</p>
+
+<p>
+Enter the access phrase exactly as written in the margin of the blue notebook.
+</p>
+
+<input type="password" id="pass" placeholder="access phrase">
+<button onclick="unlock()">Confirm</button>
+
+<p class="hidden">
+If you are reading this, you already know too much.
+</p>
+</div>
+
+<div id="content" style="display:none;">
+
+<div class="section">
+<h2>Observational Fragment — Umbra</h2>
+
+<p>
+In psychological literature, <em>Umbra</em> refers to the shadowed aspects of the psyche.
+Traits denied, suppressed, or unexamined.
+</p>
+
+<p>
+In practice, the phenomenon behaves less metaphorically.
+Awareness alters behavior. Observation strengthens manifestation.
+</p>
+
+<p class="hidden">
+Do not name it aloud.
+</p>
+
+<p class="hidden">
+Once separated, the subject deteriorates.
+</p>
+
+<p class="hidden">
+The body remains. Something else leaves.
+</p>
+
+<p class="hidden">
+Lucian.
+</p>
+</div>
+
+<div class="section">
+<h2>Regarding Unauthorized Procedures</h2>
+
+<p>
+I will not describe the methodology in detail.
+What matters is that it was attempted twice.
+</p>
+
+<p>
+Both subjects exhibited discoloration along the extremities.
+Motor function loss followed in one case.
+Cognitive fragmentation in the other.
+</p>
+
+<p>
+The supervising individual, Charles <span class="redacted">█████</span>,
+documented the results obsessively.
+</p>
+
+<p class="hidden">
+He could not reconcile the outcome.
+</p>
+
+<p class="hidden">
+Neither can I.
+</p>
+
+<p class="hidden">
+Lucian.
+</p>
+</div>
+
+<div class="section">
+<h2>Peripheral Notes — Archetypal Recurrence</h2>
+
+<p>
+Repeated imagery appears in dreams and waking perception.
+Masks. Circles. Mirrors.
+</p>
+
+<p>
+A figure laughing behind music.
+Not seen directly.
+Always implied.
+</p>
+
+<p class="hidden">
+I hear calliope tones when alone.
+</p>
+
+<p class="hidden">
+I freeze when it begins.
+</p>
+
+<p class="hidden">
+This is not metaphor.
+</p>
+
+<p class="hidden">
+Lucian.
+</p>
+</div>
+
+<div class="section">
+<h2>Unsent Message</h2>
+
+<p>
+There is a child.
+</p>
+
+<p>
+Contact is prohibited.
+</p>
+
+<p>
+I was told interference would destabilize everything further.
+</p>
+
+<p class="hidden">
+I do not know how to warn her.
+</p>
+
+<p class="hidden">
+I do not know if warning is worse.
+</p>
+
+<p class="hidden">
+Lucian.
+</p>
+</div>
+
+<div class="section">
+<h2>Final Note (for now)</h2>
+
+<p>
+If these notes surface publicly,
+assume I failed to remain unnoticed.
+</p>
+
+<p>
+Do not investigate further.
+Do not trace names.
+Do not attempt separation.
+</p>
+
+<p class="hidden">
+Especially do not seek Mr. <span class="redacted">█████</span>.
+</p>
+
+<p class="hidden">
+Lucian.
+</p>
+</div>
+
+</div>
+
+</main>
+
+<footer>
+Personal Addendum · Compiled by Lucian · 1972–1983
+</footer>
+
+<script>
+function unlock(){
+    const p=document.getElementById("pass").value;
+    if(p==="UMBRA"){
+        document.getElementById("gate").style.display="none";
+        document.getElementById("content").style.display="block";
+    }else{
+        alert("Incorrect.");
+    }
+}
+</script>
+
+<!--
+If someone reads source:
+Do not trust the archive chronology.
+Some entries were written after events that have not occurred yet.
+-->
+</body>
+</html>
